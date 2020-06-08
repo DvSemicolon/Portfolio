@@ -1,0 +1,25 @@
+//general
+@import "variablesAndMore";
+@import "normalize";
+@import "nav";
+
+// pages
+@import "home";
+@import "about";
+@import "projects";
+@import "contact";
+@import "fonts";
+
+.wrapper {
+  color: $secColor;
+  background: $bgColor;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  place-content: center;
+}
+
+a:hover,
+a:active {
+  color: $primColor;
+}

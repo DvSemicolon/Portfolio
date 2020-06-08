@@ -1,0 +1,38 @@
+.home {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, $bgColor, transparent),
+    url("../img/bg/photo-of-turned-on-laptop-computer-943096.jpg");
+  background-size: cover;
+  background-position: center;
+  place-content: center;
+  justify-items: center;
+  grid-gap: 1rem;
+
+  &__name {
+    text-align: center;
+    font-family: brush, serif;
+    letter-spacing: 0.4rem;
+    font-size: 3rem;
+  }
+
+  &__profession {
+    text-align: center;
+    color: #fff;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    .fab {
+      color: $secColor;
+      font-size: 3rem;
+      @include animLinks;
+      &:hover {
+        color: $primColor;
+      }
+    }
+  }
+}

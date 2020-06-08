@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-family: orange, consolas, serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  letter-spacing: 2px; }
+
+a,
+a:visited,
+a:active {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.burger {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  height: 4rem;
+  width: 3rem;
+  cursor: pointer;
+  z-index: 49;
+  transition: all 1s linear; }
+  .burger__line {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 1.8rem;
+    width: 100%;
+    height: 0.4rem;
+    background: #ffe401;
+    transition: all 1s linear; }
+    .burger__line::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 1.8rem;
+      width: 100%;
+      height: 0.4rem;
+      background: #ffe401;
+      transition: all 1s linear;
+      top: -1rem; }
+    .burger__line::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 1.8rem;
+      width: 100%;
+      height: 0.4rem;
+      background: #ffe401;
+      transition: all 1s linear;
+      top: 1rem;
+      width: 70%; }
+    .burger__line.open {
+      transform: rotate(-720deg);
+      background: transparent; }
+      .burger__line.open::before {
+        transform: rotate(45deg) translate(0.7rem, 0.7rem);
+        color: #ff652f; }
+      .burger__line.open::after {
+        width: 100%;
+        transform: rotate(-45deg) translate(0.7rem, -0.7rem);
+        color: #ff652f; }
+
+.menu {
+  position: fixed;
+  height: 100vh;
+  background: #272727;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100vh);
+  transition: all 1s linear; }
+  .menu__list {
+    text-align: center;
+    display: grid;
+    grid-gap: 1rem;
+    opacity: 1; }
+    .menu__list--item a {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #ffe401; }
+    .menu__list--item:hover {
+      transform: scale(1.2); }
+
+.menu.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all; }
+
+.home {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #272727, transparent), url("../img/bg/photo-of-turned-on-laptop-computer-943096.jpg");
+  background-size: cover;
+  background-position: center;
+  place-content: center;
+  justify-items: center;
+  grid-gap: 1rem; }
+  .home__name {
+    text-align: center;
+    font-family: brush, serif;
+    letter-spacing: 0.4rem;
+    font-size: 3rem; }
+  .home__profession {
+    text-align: center;
+    color: #fff; }
+  .home .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; }
+    .home .socials .fab {
+      color: #ffe401;
+      font-size: 3rem;
+      transition: all 1s linear; }
+      .home .socials .fab:hover {
+        color: #ff652f; }
+
+@font-face {
+  font-family: luna;
+  src: url("../font/Luna.ttf"); }
+
+@font-face {
+  font-family: price;
+  src: url("../font/pricedown bl.ttf"); }
+
+@font-face {
+  font-family: brush;
+  src: url("../font/blowbrush.ttf"); }
+
+@font-face {
+  font-family: orange;
+  src: url("../font/Orange Blossom.ttf"); }
+
+.wrapper {
+  color: #ffe401;
+  background: #272727;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  place-content: center; }
+
+a:hover,
+a:active {
+  color: #ff652f; }

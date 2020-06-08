@@ -1,0 +1,26 @@
+$bgColor: #272727;
+$ltBgColor: #747474;
+$primColor: #ff652f;
+$secColor: #ffe401;
+$trdColor: #13a76b;
+
+//Burger
+@mixin brg {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1.8rem;
+  width: 100%;
+  height: 0.4rem;
+  background: $secColor;
+  transition: all 1s linear;
+}
+
+//Animation
+
+@mixin animLinks {
+  transition: all 1s linear;
+}
+@mixin animBg {
+  transition: all 2s linear;
+}
