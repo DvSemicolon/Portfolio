@@ -1,0 +1,66 @@
+.about__header {
+  display: flex;
+  height: 40vh;
+  width: 100vw;
+  background: linear-gradient(transparent, $bgColor),
+    url("../img/bg/macbook-pro-129208.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+
+  &::after {
+    content: "about";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: $secColor;
+    pointer-events: none;
+  }
+  .socials {
+    position: absolute;
+    z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    bottom: -1.5rem;
+    .fab {
+      color: $secColor;
+      font-size: 3rem;
+      @include animLinks;
+      &:hover {
+        color: $primColor;
+      }
+    }
+  }
+}
+
+.about {
+  position: relative;
+  padding: 10rem 4rem;
+  height: 60vh;
+  width: 100vw;
+  display: grid;
+
+  .resume {
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.9;
+    text-align: justify;
+  }
+
+  .cite {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  cite {
+    text-align: right;
+  }
+}

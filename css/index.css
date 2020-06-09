@@ -24,7 +24,7 @@ li {
   height: 4rem;
   width: 3rem;
   cursor: pointer;
-  z-index: 49;
+  z-index: 101;
   transition: all 1s linear; }
   .burger__line {
     content: "";
@@ -71,12 +71,14 @@ li {
   position: fixed;
   height: 100vh;
   background: #272727;
+  background: #000;
   width: 100vw;
   display: grid;
   place-content: center;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-100vh);
+  z-index: 100;
   transition: all 1s linear; }
   .menu__list {
     text-align: center;
@@ -84,7 +86,7 @@ li {
     grid-gap: 1rem;
     opacity: 1; }
     .menu__list--item a {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-transform: uppercase;
       color: #ffe401; }
     .menu__list--item:hover {
@@ -109,10 +111,11 @@ li {
     text-align: center;
     font-family: brush, serif;
     letter-spacing: 0.4rem;
-    font-size: 3rem; }
+    font-size: 4rem; }
   .home__profession {
     text-align: center;
-    color: #fff; }
+    color: #ff652f;
+    font-size: 3rem; }
   .home .socials {
     display: flex;
     justify-content: space-between;
@@ -123,6 +126,60 @@ li {
       transition: all 1s linear; }
       .home .socials .fab:hover {
         color: #ff652f; }
+
+.about__header {
+  display: flex;
+  height: 40vh;
+  width: 100vw;
+  background: linear-gradient(transparent, #272727), url("../img/bg/macbook-pro-129208.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center; }
+  .about__header::after {
+    content: "about";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #ffe401;
+    pointer-events: none; }
+  .about__header .socials {
+    position: absolute;
+    z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    bottom: -1.5rem; }
+    .about__header .socials .fab {
+      color: #ffe401;
+      font-size: 3rem;
+      transition: all 1s linear; }
+      .about__header .socials .fab:hover {
+        color: #ff652f; }
+
+.about {
+  position: relative;
+  padding: 10rem 4rem;
+  height: 60vh;
+  width: 100vw;
+  display: grid; }
+  .about .resume {
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.9;
+    text-align: justify; }
+  .about .cite {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-style: italic; }
+  .about cite {
+    text-align: right; }
 
 @font-face {
   font-family: luna;

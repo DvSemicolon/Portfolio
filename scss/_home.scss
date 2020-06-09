@@ -14,12 +14,13 @@
     text-align: center;
     font-family: brush, serif;
     letter-spacing: 0.4rem;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   &__profession {
     text-align: center;
-    color: #fff;
+    color: $primColor;
+    font-size: 3rem;
   }
 
   .socials {

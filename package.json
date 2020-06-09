@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DvSemicolon/Portfolio/issues"
   },
-  "homepage": "https://github.com/DvSemicolon/Portfolio#readme"
+  "homepage": "https://github.com/DvSemicolon/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
